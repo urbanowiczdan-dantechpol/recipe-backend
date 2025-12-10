@@ -13,18 +13,18 @@ export interface Step {
 
 export interface Recipe {
   title: string;
-  author?: string;
+  author?: string | null;
   ingredients: Ingredient[];
   steps: Step[];
-  prep_time?: number;
-  cook_time?: number;
-  total_time?: number;
-  servings?: number;
-  difficulty?: 'easy' | 'medium' | 'hard';
-  category?: string;
-  cuisine?: string;
-  language?: 'pl' | 'en';
-  tags?: string[];
-  image_url?: string;
-  notes?: string;
+  prep_time?: number | null;
+  cook_time?: number | null;
+  total_time?: number | null;
+  servings?: number | null;
+  difficulty?: 'easy' | 'medium' | 'hard' | null;
+  category?: string | null;
+  cuisine?: string | null;
+  language?: 'pl' | 'en' | null;
+  tags?: string[] | null;
+  image_url?: string | null;
+  notes?: string | null;
 }
